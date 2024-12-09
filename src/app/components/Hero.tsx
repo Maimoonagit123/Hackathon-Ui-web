@@ -75,7 +75,7 @@ const Hero = () => {
             width={312}
           />
         </div>
-        <div className="w-[312px] h-[377px] bg-red-400">
+        <div className="w-[312px] h-[377px] ">
           <Image
             src="/images/pinkchair.png"
             alt="chair2"
@@ -83,7 +83,7 @@ const Hero = () => {
             width={312}
           />
         </div>
-        <div className="w-[312px] h-[377px] bg-red-200">
+        <div className="w-[312px] h-[377px] ">
           <Image
             src="/images/orangechair.png"
             alt="chair3"
@@ -91,7 +91,7 @@ const Hero = () => {
             width={312}
           />
         </div>
-        <div className="w-[312px] h-[377px] bg-red-900">
+        <div className="w-[312px] h-[377px] ">
           <Image
             src="/images/white.png"
             alt="chair4"
@@ -104,7 +104,7 @@ const Hero = () => {
         <h1>Top Categories</h1>
       </div>
       <div className="flex justify-between items-center w-full gap-5 h-[461px] px-10 p-5">
-        <div className="w-[424px] h-[424px] bg-red-900">
+        <div className="w-[424px] h-[424px]">
           <Image
             src="/images/wingchair.png"
             alt="wingchair"
@@ -116,7 +116,7 @@ const Hero = () => {
             <p className="text-sm">3584 Products</p>
           </div>
         </div>
-        <div className="w-[424px] h-[424px] bg-red-900">
+        <div className="w-[424px] h-[424px]">
           <Image
             src="/images/woodenchair.png"
             alt="woodenchair"
@@ -124,7 +124,7 @@ const Hero = () => {
             width={424}
           />
         </div>
-        <div className="w-[424px] h-[424px] bg-red-900">
+        <div className="w-[424px] h-[424px]">
           <Image
             src="/images/black.png"
             alt="blackchair"

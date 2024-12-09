@@ -6,10 +6,10 @@ const Footer = () => {
     <div>
       <footer className="bg-blue-500 lg:h-[343px] lg:w-full py-10 ">
         <div
-          className="container grid grid-cols-1 sm:grid-cols-2 bg-orange-500 m-10 
+          className="container grid grid-cols-1 sm:grid-cols-2 m-10 
          md:grid-cols-3 lg:grid-cols-4 pl-5 w-[1320px]  lg:gap-[90px] font-normal ">
-          <div className="w-[367px] h-[243px] bg-rose-400 space-y-4">
-            <div className="flex justify-center items-center w-[166px] h-[40px] bg-pink-500">
+          <div className="w-[367px] h-[243px] space-y-4">
+            <div className="flex justify-center items-center w-[166px] h-[40px]">
               <div>
                 <Image
                   src="/images/logo.png"
@@ -64,7 +64,7 @@ const Footer = () => {
                 className="w-[38px] h-[38px]"/>
             </div>
           </div>
-          <div className=" bg-red-600 w-[105px] h-[203px] text-[#FAFAFA] space-y-4">
+          <div className="w-[105px] h-[203px] text-[#FAFAFA] space-y-4">
             <h1 className="text-xl opacity-70">Category</h1>
             <ul className="space-y-3">
               <li>Sofa</li>
