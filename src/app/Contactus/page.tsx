@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactPage = () => {
+const Contactus = () => {
   return (
     <div className=" w-[1440px] mx-auto h-[1144px] flex flex-col items-center justify-between bg-red-400 pt-[100px]">
       <div className='bg-pink-200'>
@@ -20,4 +20,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contactus;

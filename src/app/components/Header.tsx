@@ -5,6 +5,7 @@ import { FaCheck } from "react-icons/fa6";
 import { IoChevronDown } from "react-icons/io5";
 import { RxQuestionMarkCircled } from "react-icons/rx";
 
+
 const Header = () => {
   return (
     <header className= "flex justify-between fixed overflow-hidden text-white font-inter-200  w-full md:px-[150px]  md:py-3 md:h-[45px] bg-[#272343]">
@@ -34,13 +35,13 @@ const Header = () => {
 
 
         {/* FAQs Link */}
-        <ul><li><Link href="/faqs" className="text-sm hover:opacity-100 transition-opacity">Faqs</Link></li></ul>
+        <ul><li><Link href="/Faqs" className="text-sm hover:opacity-100 transition-opacity">Faqs</Link></li></ul>
         {/* Need Help Section */}
         <div className="flex items-center gap-1 cursor-pointer">
           {/* Help Icon */}
           <RxQuestionMarkCircled className="w-4 h-4 opacity-70" />
           {/* Help Text */}
-          <span >Need Help</span>
+        <Link href="/Contactus">Need Help</Link>
         </div>
       </div>
     </header>

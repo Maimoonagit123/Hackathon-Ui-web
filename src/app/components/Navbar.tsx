@@ -27,12 +27,13 @@ const Navbar = (props: any) => {
 
             {/*   
   <!-- Cart Label --> */}
-            <span className="text-gray-800 text-sm font-medium">Cart</span>
-
-            {/* <!-- Badge --> */}
-            <div className="flex items-center justify-center w-[22px] h-[20px] text-white bg-teal-500 rounded-full text-xs font-bold">
+            <button className="flex gap-1 text-gray-800 text-sm font-medium">Cart
+             <div className="flex items-center justify-center w-[22px] h-[20px] text-white bg-teal-500 rounded-full text-xs font-bold">
               2
             </div>
+            </button>
+  {/* <!-- Badge --> */}
+           
           </div>
         </div>
       </div>
