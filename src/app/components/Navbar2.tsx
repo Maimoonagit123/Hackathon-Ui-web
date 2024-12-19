@@ -1,32 +1,83 @@
-import React from 'react'
-import Link from 'next/link'
+"use client"
+import { useState } from "react";
+import Link from "next/link";
+import { IoIosMenu } from "react-icons/io";
 
-const Navbar2 = () => {
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div>
-     <div className=' flex justify-between items-center h-[74px] bg-[#F0F2F3] pl-[180px] gap[400px]'>
-        <div className=' '>
-          <ul className=' flex  justify-between items-center text-sm w-[339px] h-[15px] '>
-            <li className='hover:text-blue-400'><Link href="/">Home</Link></li>
-            <li className='hover:text-blue-400'><Link href="/Shop">Shop</Link></li>
-            <li className='hover:text-blue-400'><Link href="/Productpage">Product</Link></li>
-            <li className='hover:text-blue-400'><Link href="/">Pages</Link></li>
-            <li className='hover:text-blue-400'><Link href="/Aboutus">About</Link></li>
-          </ul>
-        </div>
-        <div className='flex w-[168px] gap-1 h-[15px] text-xs'>
-        <div className= 'opacity-70 '>
-          Contact:
-        </div>
-        <div>
-        (808) 555-0111
-        </div>
-        </div>
+    <nav className="bg-white">
+      {/* Navbar Container */}
+      <div className="flex justify-between items-center h-[74px] px-4 sm:px-6 md:px-[120px]">
+        {/* Brand / Logo */}
         
 
-      </div>
-    </div>
-  )
-}
+        {/* Hamburger Menu Button */}
+        <button
+          className="block md:hidden text-gray-800 focus:outline-none"
+          onClick={toggleMenu}
+          aria-label="Toggle Menu"
+        >
+         <IoIosMenu className="text-3xl text-gray-800"/>
+        </button>
 
-export default Navbar2
+        {/* Desktop Navigation Links */}
+        <ul className="hidden md:flex md:items-center md:gap-8 text-sm">
+          <li className="hover:text-blue-400">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="hover:text-blue-400">
+            <Link href="/Shop">Shop</Link>
+          </li>
+          <li className="hover:text-blue-400">
+            <Link href="/Productpage">Product</Link>
+          </li>
+          <li className="hover:text-blue-400">
+            <Link href="/Pages">Pages</Link>
+          </li>
+          <li className="hover:text-blue-400">
+            <Link href="/Aboutus">About</Link>
+          </li>
+        </ul>
+
+        {/* Desktop Contact Information */}
+        <div className="hidden md:block text-xs">
+          <Link href="/Contactus">Contact: (808) 555-0111</Link>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`${
+          isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        } overflow-hidden transition-all duration-300 md:hidden bg-gray-100`}
+      >
+        <ul className="flex flex-col items-center gap-4 py-4 text-sm">
+          <li className="hover:text-blue-400">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="hover:text-blue-400">
+            <Link href="/Shop">Shop</Link>
+          </li>
+          <li className="hover:text-blue-400">
+            <Link href="/Productpage">Product</Link>
+          </li>
+          <li className="hover:text-blue-400">
+            <Link href="/Pages">Pages</Link>
+          </li>
+          <li className="hover:text-blue-400">
+            <Link href="/Aboutus">About</Link>
+          </li>
+          <li className="text-gray-800 text-xs">
+            <Link href="/Contactus">Contact: (808) 555-0111</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+}

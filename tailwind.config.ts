@@ -10,7 +10,9 @@ const config: Config = {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif','Roboto'],
-        sans: ['Helvetica', 'Arial']
+        sans: ['Helvetica', 'Arial'],
+        poppins: ['poppins'],
+        roboto: ['Roboto']
       },
     },
   },

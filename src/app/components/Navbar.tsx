@@ -1,42 +1,41 @@
 import React from "react";
 import Image from "next/image";
 
-const Navbar = (props: any) => {
-  console.log(props);
+const Navbar = () => {
+
   return (
     <div>
-      <div className=" flex justify-between items-center  w-full h-[84px] px-[500px]  ">
-        <div className=" flex justify-center w-[166px] gap-[600px] h-[40px] py-3">
-          <div className="flex justify-center items-center w-[166px] h-[40px] ">
-            <div>
-              <Image src="/images/logo.png" alt="logo" width={24} height={24} />
-            </div>
-            <div className="w-[118px] h-[31px] text-[#272343] px-1 text-xl">
-              Comforty
-            </div>
-          </div>
-          <div className="flex justify-center items-center gap-2 bg-white p-4 rounded-md shadow w-[120px] h-[44px]">
-            {/* <!-- Cart Icon --> */}
-            <Image
-              src="/images/cart.png"
-              alt="cart"
-              className="w-5 h-5 text-gray-800"
-              width={22}
-              height={22}
-            />
-
-            {/*   
-  <!-- Cart Label --> */}
-            <button className="flex gap-1 text-gray-800 text-sm font-medium">Cart
-             <div className="flex items-center justify-center w-[22px] h-[20px] text-white bg-teal-500 rounded-full text-xs font-bold">
-              2
-            </div>
-            </button>
-  {/* <!-- Badge --> */}
-           
-          </div>
-        </div>
+    <div className="bg-[#F0F2F3] w-full h-auto px-4 sm:px-6 md:px-12 lg:px-[120px] font-inter  pt-5 sm:pt-2 sm:my-2">
+  <div className="flex flex-wrap justify-between items-center ">
+    {/* Logo Section */}
+    <div className="flex items-center w-auto my-4">
+      <div>
+        <Image src="/images/logo.png" alt="logo" width={24} height={24} />
       </div>
+      <div className="text-[#272343] px-2 text-lg sm:text-xl">
+        Comforty
+      </div>
+    </div>
+
+    {/* Cart Section */}
+    <div className="flex items-center gap-2 bg-white p-2 sm:p-4 rounded-md shadow w-auto sm:w-[120px] h-auto sm:h-[44px]  sm:mt-0">
+      <Image
+        src="/images/cart.png"
+        alt="cart"
+        className="w-5 h-5 text-gray-800"
+        width={22}
+        height={22}
+      />
+      <button className="flex gap-1 items-center text-gray-800 text-sm sm:text-base font-medium">
+        Cart
+        <div className="flex items-center justify-center w-[18px] sm:w-[22px] h-[18px] sm:h-[20px] text-white bg-teal-500 rounded-full text-xs font-bold">
+          2
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };

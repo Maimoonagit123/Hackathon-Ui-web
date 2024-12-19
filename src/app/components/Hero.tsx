@@ -3,40 +3,43 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div>
-      <main>
-        <div className="flex items-center justify-between bg-gray-50  rounded-bl-lg mx-10 w-[1304px] h-[850px] p-[150px] ">
+      <main className=" font-inter">
+        <div className=" rounded-bl-lg flex flex-col md:flex-row bg-[#F0F2F3] px-4 sm:px-8 md:px-[70px] pb-14 mx-auto w-full md:w-[83%] h-auto md:h-[850px] overflow-hidden items-center ">
           {/* <!-- Left Section --> */}
-          <div className="w-[557px] h-[337px]  ">
-            <p className="text-sm font-medium text-gray-600 uppercase">
-              Welcome to Chairy
-            </p>
-            <h1 className="mt-4 text-4xl font-bold text-gray-900 leading-snug">
-              Best Furniture
-              <br />
-              Collection For Your Interior.
-            </h1>
-            <button className="mt-6 px-6 py-3 bg-teal-500 text-white rounded-md shadow hover:bg-teal-600 flex items-center gap-2">
-              Shop Now
-              <Image
-                src="/images/arrow.png"
-                alt="Chair"
-                height={24}
-                width={24}
-              />
-            </button>
-          </div>
-
+          <div className="w-full md:w-[557px] h-auto text-center md:text-left px-4 sm:px-8">
+  <p className="text-sm sm:text-sm font-medium text-gray-600 uppercase">
+    Welcome to Chairy
+  </p>
+  <h1 className="mt-4 text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 leading-snug">
+    Best Furniture
+    <br />
+    Collection For Your Interior.
+  </h1>
+  <div className="flex justify-center md:justify-start mt-6">
+  <button className="px-6 py-3 bg-teal-500 text-white rounded-md shadow hover:bg-teal-600 flex items-center gap-2">
+    Shop Now
+    <Image
+      src="/images/arrow.png"
+      alt="Chair"
+      height={24}
+      width={24}
+    />
+  </button>
+</div>
+</div>
           {/* <!-- Right Section (Image) --> */}
-          <div className="">
+          <div className="mt-10 md:mt-0">
             <Image
               src="/images/chair.png"
               alt="Chair"
               height={584}
               width={434}
+              className="w-full h-auto max-w-[400px] md:max-w-none"
             />
           </div>
         </div>
       </main>
+
       {/* center section */}
 
       <div className="w-full flex flex-wrap justify-between items-center px-4 md:px-10 py-4">

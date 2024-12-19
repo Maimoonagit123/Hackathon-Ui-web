@@ -5,11 +5,21 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Navbar2 from "./components/Navbar2";
 import Footer from "./components/Footer";
+import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 
 
 
 const inter = Inter({ subsets: ["latin"], 
-  weight: ["200","400","600"]
+  weight: ["200","400","500","600"]
+});
+
+const poppins = Poppins({ subsets: ["latin"], 
+  weight: ["200","400","600","800","500"]
+});
+
+const roboto = Roboto({ subsets: ["latin"], 
+  weight: ["100","300","400","700","500","900"]
 });
 
 export const metadata: Metadata = {
@@ -32,7 +42,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header/>
-        <br />
+         <br />
+         
         <Navbar/>
         <Navbar2/>
        <div className="">{children}</div> 

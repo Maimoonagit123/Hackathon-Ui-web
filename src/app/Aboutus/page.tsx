@@ -19,7 +19,7 @@ const Aboutus = () => {
       <div className="container mx-auto px-4 mt-10 mb-20">
         {/* About Us Section */}
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-5 mt-10">
-          <div className="bg-[#007580] lg:w-1/2 lg:h-[470px] w-full p-10">
+          <div className="bg-[#007580] lg:w-1/2 lg:h-[470px] p-10">
             <h1 className="font-bold text-3xl text-white mb-5">
               About Us - Comforty
             </h1>
@@ -33,7 +33,7 @@ const Aboutus = () => {
               View Collection
             </button>
           </div>
-          <div className="lg:w-1/2 w-full bg-red-400">
+          <div className="lg:w-1/2  bg-red-400">
             <Image
               src="/images/whitechair2.png"
               alt="whitechair"
