@@ -200,87 +200,77 @@ const Hero = () => {
         <div></div>
       </div> */}
 
-<div className="relative -left-[22px] top-[460px]">
-      <div className="absolute w-[648px] h-[52px]  text-[34px] leading-[40px] text-center uppercase font-roboto font-normal text-black rotate-[-90deg]">
+<div className="lg:relative lg:-left-[22px] lg:top-[460px] mt-10 sm:mt-20 lg:mt-0 mx-10 sm:mx-[10px] lg:mx-0 md:mx-[60px]">
+      <div className="lg:absolute w-[648px] h-[52px] text-[22px]  sm:text-[30px] md:text-[34px] leading-[40px] sm:text-center uppercase font-roboto md:font-normal font-bold text-black lg:rotate-[-90deg]">
       Explore new and popular style
      </div>
       </div>
-      <div className="flex gap-5 lg:w-[1320px] h-[648px] mt-[170px] ml-[332px] ">
-        <div className="w-1/2 h-[648px]">
-          <Image
-            src="/images/orange2.png"
-            alt="cart"
-            width={648}
-            height={648}
-          />
-        </div>
-        <div className="w-1/2 h-[648px]">
-          <div className="flex gap-5">
-            <div className="w-[312px] h-[312px]">
-              <Image
-                src="/images/white4.png"
-                alt="cart"
-                width={312}
-                height={312}
-              />
-            </div>
-            <div className="w-[312px] h-[312px]">
-              <Image
-                src="/images/whitechair3.png"
-                alt="cart"
-                width={312}
-                height={312}
-              />
-            </div>
-          </div>
-          <div className="flex gap-5 mt-5">
-            <div className="w-[312px] h-[312px]">
-              <Image
-                src="/images/curve.png"
-                alt="cart"
-                width={312}
-                height={312}
-              />
-            </div>
-            <div className="w-[312px] h-[312px]">
-              <Image
-                src="/images/whitechair3.png"
-                alt="cart"
-                width={312}
-                height={312}
-              />
-            </div>
-          </div>
-        </div>
+      <div className="flex flex-col items-center lg:flex-row  gap-5 lg:w-[1320px] w-full lg:h-[648px] h-auto mt-[30px] md:mt-[80px] lg:mt-[150px] ml-auto lg:ml-[332px] px-4">
+  {/* Left Section */}
+  <div className="lg:w-1/2 w-auto lg:h-[648px] h-auto">
+    <Image
+      src="/images/orange2.png"
+      alt="cart"
+      width={648}
+      height={648}
+      className="w-full h-auto lg:h-[648px] object-cover"
+    />
+  </div>
+
+  {/* Right Section */}
+  <div className="lg:w-1/2 w-auto lg:h-[648px] h-auto">
+    {/* Top Row */}
+    <div className="flex flex-wrap lg:flex-nowrap gap-5">
+      <div className="w-[312px] h-[312px]">
+        <Image
+          src="/images/white4.png"
+          alt="cart"
+          width={312}
+          height={312}
+          
+        />
       </div>
+      <div className="w-[312px] h-[312px]">
+        <Image
+          src="/images/whitechair3.png"
+          alt="cart"
+          width={312}
+          height={312}
+          className="w-full h-auto object-cover"
+        />
+      </div>
+    </div>
+
+    {/* Bottom Row */}
+    <div className="flex flex-wrap lg:flex-nowrap  gap-5 mt-5">
+      <div className="w-[312px] h-[312px]">
+        <Image
+          src="/images/curve.png"
+          alt="cart"
+          width={312}
+          height={312}
+          className="w-full h-[312px] object-cover"
+        />
+      </div>
+      <div className="w-[312px] h-[312px]">
+        <Image
+          src="/images/whitechair3.png"
+          alt="cart"
+          width={312}
+          height={312}
+          className="w-auto h-[312px] object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };
 
 export default Hero;
 
-
-/* Explore new and popular styles */
-
-// position: absolute;
-// width: 648px;
-// height: 52px;
-// left: -52px;
-// top: 648px;
-
-// /* Body 2 */
-// font-family: 'Roboto';
-// font-style: normal;
-// font-weight: 400;
-// font-size: 34px;
-// line-height: 40px;
-// text-align: center;
-// text-transform: uppercase;
-
-// /* Dark */
-// color: #000000;
-
-// transform: rotate(-90deg);
 
 
 <div className="w-[1920px] h-[44px]">
