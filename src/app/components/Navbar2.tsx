@@ -32,22 +32,22 @@ export default function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li className="hover:text-blue-400">
-            <Link href="/Shop">Shop</Link>
+            <Link href="/shop">Shop</Link>
           </li>
           <li className="hover:text-blue-400">
-            <Link href="/Productpage">Product</Link>
+            <Link href="/product">Product</Link>
           </li>
           <li className="hover:text-blue-400">
-            <Link href="/Pages">Pages</Link>
+            <Link href="/product/chairs">Pages</Link>
           </li>
           <li className="hover:text-blue-400">
-            <Link href="/Aboutus">About</Link>
+            <Link href="/about">About</Link>
           </li>
         </ul>
 
         {/* Desktop Contact Information */}
         <div className="hidden md:block text-xs">
-          <Link href="/Contactus">Contact: (808) 555-0111</Link>
+          <Link href="/contact">Contact: (808) 555-0111</Link>
         </div>
       </div>
 
@@ -55,26 +55,26 @@ export default function Navbar() {
       <div
         className={`${
           isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-        } overflow-hidden transition-all duration-300 md:hidden bg-gray-100`}
+        } overflow-hidden transition-all duration-300 md:hidden bg-gray-200`}
       >
-        <ul className="flex flex-col items-center gap-4 py-4 text-sm">
+        <ul className="flex flex-col items-left gap-4 py-4 px-4 text-md">
           <li className="hover:text-blue-400">
             <Link href="/">Home</Link>
           </li>
           <li className="hover:text-blue-400">
-            <Link href="/Shop">Shop</Link>
+            <Link href="/shop">Shop</Link>
           </li>
           <li className="hover:text-blue-400">
-            <Link href="/Productpage">Product</Link>
+            <Link href="/product">Product</Link>
           </li>
           <li className="hover:text-blue-400">
-            <Link href="/Pages">Pages</Link>
+            <Link href="/product/chairs">Pages</Link>
           </li>
           <li className="hover:text-blue-400">
-            <Link href="/Aboutus">About</Link>
+            <Link href="/about">About</Link>
           </li>
           <li className="text-gray-800 text-xs">
-            <Link href="/Contactus">Contact: (808) 555-0111</Link>
+            <Link href="/contact">Contact: (808) 555-0111</Link>
           </li>
         </ul>
       </div>

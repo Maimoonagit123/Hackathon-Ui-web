@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     }
   };
 
-const Cart = () => {
+const cart = () => {
   return (
     <div>
      <div className="w-full max-w-[1440px] mx-auto px-4 md:px-6 lg:px-8 my-20">
@@ -146,4 +146,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default cart;

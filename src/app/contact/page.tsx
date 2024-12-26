@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Contactus = () => {
+const contact= () => {
   return (
     <div>
       <div className="w-full py-10">
@@ -209,10 +209,8 @@ const Contactus = () => {
     </div>
   </div>
 </div>
-
-      
-    </div>
+</div>
   );
 };
 
-export default Contactus;
+export default contact;

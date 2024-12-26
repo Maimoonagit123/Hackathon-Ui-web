@@ -37,7 +37,7 @@ const Header = () => {
     {/* FAQs Link */}
     <ul>
       <li>
-        <Link href="/Faqs" className="hover:opacity-100 transition-opacity">
+        <Link href="/faqs" className="hover:opacity-100 transition-opacity">
           FAQs
         </Link>
       </li>
@@ -48,7 +48,7 @@ const Header = () => {
       {/* Help Icon */}
       <RxQuestionMarkCircled className="w-4 h-4" />
       {/* Help Text */}
-      <Link href="/Contactus" className="hover:opacity-100 transition-opacity">
+      <Link href="/contact" className="hover:opacity-100 transition-opacity">
         Need Help
       </Link>
     </div>

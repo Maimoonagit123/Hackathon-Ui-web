@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     }
   };
 
-const Faqs = () => {
+const faqs = () => {
   return (
     <div>
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
@@ -53,4 +53,4 @@ const Faqs = () => {
   );
 };
 
-export default Faqs;
+export default faqs;

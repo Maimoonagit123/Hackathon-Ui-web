@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
 };
 
-const Aboutus = () => {
+const about = () => {
   return (
     <div>
       <div className="container mx-auto px-4 mt-10 mb-20">
@@ -171,4 +171,4 @@ const Aboutus = () => {
   );
 };
 
-export default Aboutus;
+export default about;

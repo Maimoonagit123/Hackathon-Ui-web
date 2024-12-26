@@ -14,6 +14,9 @@ const config: Config = {
         poppins: ['poppins'],
         roboto: ['Roboto']
       },
+      screens: {
+        xsm: '360px', // Custom breakpoint for extra small screens
+      },
     },
   },
   plugins: [],

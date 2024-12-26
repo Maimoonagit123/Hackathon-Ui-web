@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <div>
-    <div className="bg-[#F0F2F3] w-full h-auto px-4 sm:px-6 md:px-12 lg:px-[120px] font-inter  pt-5 sm:pt-2 sm:my-2">
+    <div className="bg-[#F0F2F3] w-full h-auto px-4  lg:px-[120px] font-inter  mx-auto pt-5 sm:pt-2 sm:my-2">
   <div className="flex flex-wrap justify-between items-center ">
     {/* Logo Section */}
     <div className="flex items-center w-auto my-4">
