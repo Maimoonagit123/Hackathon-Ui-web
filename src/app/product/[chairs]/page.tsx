@@ -5,7 +5,7 @@ import Link from 'next/link'
 const chairs = () => {
   return (
     <div>
-      <div className=' flex w-[1920px] gap-20 h-[607px] mx-[260px] mt-[40px] font-inter'>
+      <div className=' flex w-[1920px] gap-20 h-[607px] ml-[100px] mt-[40px] font-inter overflow-hidden'>
         <div className='w-[675px] h-[607px]'>
         <div className=''>
         <Image 
@@ -44,13 +44,13 @@ const chairs = () => {
                   </div>
                   </div>   
           </div>
-          <div className='w-[1447px] h-[409px] ml-[236px] font-inter mt-14'>
+          <div className='lg:w-[1447px] h-[409px] ml-[100px] font-inter mt-14'>
            <div className='flex justify-between mt-14'>
            <div className='w-[401px] h-[34px] font-bold text-3xl  '>FEATURED PRODUCTS</div>
-           <a href=""></a>
+          <div className='underline'> <a href="/">View All</a></div>
            </div>
             <div className='flex justify-between' >
-            <div className='w-[270px] h-[306px] mt-14'>
+            <div className='w-[270px] h-[306px] hover:scale-95 mt-14'>
             <div className='w-[270px] h-[263px] '>
             <Image
                   src="/images/greenchair.png"
@@ -65,7 +65,7 @@ const chairs = () => {
            </div>
             </div>
 
-            <div className='w-[270px] h-[306px] mt-14'>
+            <div className='w-[270px] h-[306px] hover:scale-95 mt-14'>
             <div className='w-[270px] h-[263px] '>
             <Image
                   src="/images/whitechair.png"
@@ -79,7 +79,7 @@ const chairs = () => {
            <div className='w-[28px] h-[17px] font-bold text-sm leading-4'>$99</div>
            </div>
             </div>
-            <div className='w-[270px] h-[306px] mt-14'>
+            <div className='w-[270px] h-[306px] hover:scale-95 mt-14'>
             <div className='w-[270px] h-[263px] '>
             <Image
                   src="/images/black.png"
@@ -93,7 +93,7 @@ const chairs = () => {
            <div className='w-[28px] h-[17px] font-bold text-sm leading-4'>$99</div>
            </div>
             </div>
-            <div className='w-[270px] h-[306px] mt-14'>
+            <div className='w-[270px] h-[306px] hover:scale-95 mt-14'>
             <div className='w-[270px] h-[263px] '>
             <Image
                   src="/images/orangechair.png"
@@ -107,7 +107,7 @@ const chairs = () => {
            <div className='w-[28px] h-[17px] font-bold text-sm leading-4'>$99</div>
            </div>
             </div>
-            <div className='w-[270px] h-[306px]  mt-14'>
+            <div className='w-[270px] h-[306px] hover:scale-95 mt-14'>
             <div className='w-[270px] h-[263px] '>
             <Image
                   src="/images/wingchair.png"

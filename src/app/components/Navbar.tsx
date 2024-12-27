@@ -1,8 +1,10 @@
+"use client"
 import React from "react";
 import Image from "next/image";
+import {useRouter} from "next/navigation"
 
 const Navbar = () => {
-
+const router = useRouter();
   return (
     <div>
     <div className="bg-[#F0F2F3] w-full h-auto px-4  lg:px-[120px] font-inter  mx-auto pt-5 sm:pt-2 sm:my-2">
@@ -26,7 +28,7 @@ const Navbar = () => {
         width={22}
         height={22}
       />
-      <button className="flex gap-1 items-center text-gray-800 text-sm sm:text-base font-medium">
+      <button onClick={()=>router.push("/cart")} className="flex gap-1 items-center text-gray-800 text-sm sm:text-base font-medium">
         Cart
         <div className="flex items-center justify-center w-[18px] sm:w-[22px] h-[18px] sm:h-[20px] text-white bg-teal-500 rounded-full text-xs font-bold">
           2

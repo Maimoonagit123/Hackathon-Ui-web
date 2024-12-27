@@ -192,123 +192,140 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
       {/* top categories section */}
-      {/* <div className="w-[2216px] h-[508px] bg-orange-500 mt-[170px] ml-[-148px] ">
-        <div className="ml-[148px] px-[300px] font-inter text-4xl text-[#272343]">
-          Top Categories
+      
+      <div className="w-[83%] h-[44px] ml-[148px] font-inter mt-24 ">
+        <div>
+          <h1 className="text-[#272343] text-[32px] leading-[35.2px] w-[237px] h-[35px]">
+         
+            Top Categories
+          </h1>
         </div>
-        <div></div>
-      </div> */}
+      </div>
+      <div className="flex  gap-5 w-[83%] h-[424px] mt-10 ml-[148px]">
+        <div className="relative w-[424px] h-[424px] hover:scale-95 rounded-[10px] overflow-hidden ">
+          {/* <!-- Image --> */}
+          <Image
+            src="/images/wing2.png"
+            alt="Wing Chair"
+            height={424}
+            width={424}
+            className="w-full h-full object-cover"
+          />
 
-<div className="lg:relative lg:-left-[22px] lg:top-[460px] mt-10 sm:mt-20 lg:mt-0 mx-10 sm:mx-[10px] lg:mx-0 md:mx-[60px]">
-      <div className="lg:absolute w-[648px] h-[52px] text-[22px]  sm:text-[30px] md:text-[34px] leading-[40px] sm:text-center uppercase font-roboto md:font-normal font-bold text-black lg:rotate-[-90deg]">
-      Explore new and popular style
-     </div>
-      </div>
-      <div className="flex flex-col items-center lg:flex-row  gap-5 lg:w-[1320px] w-full lg:h-[648px] h-auto mt-[30px] md:mt-[80px] lg:mt-[150px] ml-auto lg:ml-[332px] px-4">
-  {/* Left Section */}
-  <div className="lg:w-1/2 w-auto lg:h-[648px] h-auto">
-    <Image
-      src="/images/orange2.png"
-      alt="cart"
-      width={648}
-      height={648}
-      className="w-full h-auto lg:h-[648px] object-cover"
-    />
-  </div>
+          {/* <!-- Overlay --> */}
+          <div className="absolute inset-x-0 bottom-0 bg-black bg-opacity-70 p-5 flex flex-col items-start gap-2">
+            <h3 className="text-white text-lg font-semibold">Wing Chair</h3>
+            <p className="text-white text-sm">3,584 Products</p>
+          </div>
+        </div>
+        {/* second image */}
+        <div className="relative w-[424px] h-[424px] hover:scale-95  rounded-[10px] overflow-hidden ">
+          {/* <!-- Image --> */}
+          <Image
+            src="/images/wood.png"
+            alt="Wooden Chair"
+            height={424}
+            width={424}
+            className=" w-full h-full object-cover"
+          />
 
-  {/* Right Section */}
-  <div className="lg:w-1/2 w-auto lg:h-[648px] h-auto">
-    {/* Top Row */}
-    <div className="flex flex-wrap lg:flex-nowrap gap-5">
-      <div className="w-[312px] h-[312px]">
-        <Image
-          src="/images/white4.png"
-          alt="cart"
-          width={312}
-          height={312}
-          
-        />
-      </div>
-      <div className="w-[312px] h-[312px]">
-        <Image
-          src="/images/whitechair3.png"
-          alt="cart"
-          width={312}
-          height={312}
-          className="w-full h-auto object-cover"
-        />
-      </div>
-    </div>
+          {/* <!-- Overlay --> */}
+          <div className="absolute inset-x-0 bottom-0 bg-black bg-opacity-70 p-5 flex flex-col items-start gap-2">
+            <h3 className="text-white text-lg font-semibold">Wooden Chair</h3>
+            <p className="text-white text-sm">137 Products</p>
+          </div>
+        </div>
 
-    {/* Bottom Row */}
-    <div className="flex flex-wrap lg:flex-nowrap  gap-5 mt-5">
-      <div className="w-[312px] h-[312px]">
-        <Image
-          src="/images/curve.png"
-          alt="cart"
-          width={312}
-          height={312}
-          className="w-full h-[312px] object-cover"
-        />
-      </div>
-      <div className="w-[312px] h-[312px]">
-        <Image
-          src="/images/whitechair3.png"
-          alt="cart"
-          width={312}
-          height={312}
-          className="w-auto h-[312px] object-cover"
-        />
-      </div>
-    </div>
-  </div>
-</div>
+        {/* third image */}
+        <div className="relative w-[424px] h-[424px] hover:scale-95  rounded-[10px] overflow-hidden ">
+          {/* <!-- Image --> */}
+          <Image
+            src="/images/desk.png"
+            alt="Wooden Chair"
+            height={424}
+            width={424}
+            className=" w-full h-full object-cover"
+          />
 
+          {/* <!-- Overlay --> */}
+          <div className="absolute inset-x-0 bottom-0 bg-black bg-opacity-70 p-5 flex flex-col items-start gap-2">
+            <h3 className="text-white text-lg font-semibold">Desk Chair</h3>
+            <p className="text-white text-sm">134 Products</p>
+          </div>
+        </div>
+      </div>
+
+         {/* Explore New Section */}
+        
+      <div className="lg:relative lg:-left-[180px] lg:top-[460px] mt-10 sm:mt-20 lg:mt-0 mx-10 sm:mx-[10px] lg:mx-0 md:mx-[60px]">
+        <div className="lg:absolute w-[648px] h-[52px] text-[22px]  sm:text-[30px] md:text-[34px] leading-[40px] sm:text-center uppercase font-roboto md:font-normal font-bold text-black lg:rotate-[-90deg]">
+          Explore new and popular style
+        </div>
+      </div>
+      <div className="flex flex-col items-center lg:flex-row  gap-5 lg:w-[83%] w-full lg:h-[648px] h-auto mt-[30px] md:mt-[80px] lg:mt-[150px] ml-auto lg:ml-[148px] px-4">
+        {/* Left Section */}
+        <div className="lg:w-1/2 w-auto lg:h-[648px] h-auto">
+          <Image
+            src="/images/orange2.png"
+            alt="cart"
+            width={648}
+            height={648}
+            className="w-full h-auto lg:h-[648px] object-cover"
+          />
+        </div>
+
+        {/* Right Section */}
+        <div className="lg:w-1/2 w-auto lg:h-[648px] h-auto">
+          {/* Top Row */}
+          <div className="flex flex-wrap lg:flex-nowrap gap-5">
+            <div className="w-[312px] h-[312px]">
+              <Image
+                src="/images/white4.png"
+                alt="cart"
+                width={312}
+                height={312}
+                className="w-full h-auto lg:h-[312px] object-cover"
+              />
+            </div>
+            <div className="w-[312px] h-[312px]">
+              <Image
+                src="/images/whitechair3.png"
+                alt="cart"
+                width={312}
+                height={312}
+                className="w-full h-auto lg:h-[312px] object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Bottom Row */}
+          <div className="flex flex-wrap lg:flex-nowrap  gap-5 mt-6">
+            <div className="w-[312px] h-[312px]">
+              <Image
+                src="/images/curve.png"
+                alt="cart"
+                width={312}
+                height={312}
+                className="w-full h-auto lg:h-[312px] object-cover"
+              />
+            </div>
+            <div className="w-[312px] h-[312px]">
+              <Image
+                src="/images/whitechair3.png"
+                alt="cart"
+                width={312}
+                height={312}
+                className="w-auto h-auto lg:h-[312px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Hero;
 
-
-
-<div className="w-[1920px] h-[44px]">
-  <div className="text-xl font-bold mx-10">
-    <h1>Top Categories</h1>
-  </div>
-  <div className="flex justify-between items-center w-full gap-5 h-[461px] px-10 p-5">
-    <div className="w-[424px] h-[424px]">
-      <Image
-        src="/images/wingchair.png"
-        alt="wingchair"
-        height={424}
-        width={424}
-      />
-      <div className="inset-x-0 bottom-0 bg-black/70 text-white px-4 py-2 rounded-b-lg">
-        <h2 className="text-lg font-semibold">Wing Chair</h2>
-        <p className="text-sm">3584 Products</p>
-      </div>
-    </div>
-    <div className="w-[424px] h-[424px]">
-      <Image
-        src="/images/woodenchair.png"
-        alt="woodenchair"
-        height={424}
-        width={424}
-      />
-    </div>
-    <div className="w-[424px] h-[424px]">
-      <Image
-        src="/images/black.png"
-        alt="blackchair"
-        height={424}
-        width={424}
-      />
-      <div className="inset-x-0 bottom-0 bg-black/70 text-white px-4 py-2 rounded-b-lg">
-        <h2 className="text-lg font-semibold">Desk Chair</h2>
-        <p className="text-sm">154 Products</p>
-      </div>
-    </div>
-  </div>
-</div>;
