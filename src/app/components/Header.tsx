@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { FaCheck } from "react-icons/fa6";
 import { IoChevronDown } from "react-icons/io5";
