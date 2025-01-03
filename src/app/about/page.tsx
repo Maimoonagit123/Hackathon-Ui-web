@@ -16,14 +16,14 @@ export const metadata: Metadata = {
 const about = () => {
   return (
     <div>
-      <div className="container mx-auto px-4 mt-10 mb-20">
+      <div className=" lg:w-[83%] mx-auto  mt-10 mb-20">
         {/* About Us Section */}
-        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-5 mt-10">
+        <div className="flex flex-col lg:flex-row  gap-10 lg:gap-5 ">
           <div className="bg-[#007580] lg:w-1/2 lg:h-[470px] p-10">
-            <h1 className="font-bold text-3xl text-white mb-5">
+            <h1 className="font-bold text-3xl text-white pb-5">
               About Us - Comforty
             </h1>
-            <p className="text-white text-lg mb-10">
+            <p className="text-white text-lg pb-10">
               At Comforty, we believe that the right chair can transform your
               space and elevate your comfort. Specializing in ergonomic design,
               premium materials, and modern aesthetics, we craft chairs that
@@ -33,13 +33,13 @@ const about = () => {
               View Collection
             </button>
           </div>
-          <div className="lg:w-1/2  bg-red-400">
+          <div className=" lg:h-[470px] lg:w-[619px]">
             <Image
               src="/images/whitechair2.png"
               alt="whitechair"
               width={619}
-              height={200}
-              className=""
+              height={470}
+              className="object-cover"
             />
           </div>
         </div>
@@ -119,10 +119,10 @@ const about = () => {
         </div>
       </div>
 
-      <div className="ml-10 font-inter font-semibold text-3xl text-[#272343] ">
+      <div className="lg:w-[83%] mx-auto pl-8 lg:pl-0 font-inter font-semibold text-3xl text-[#272343] ">
         Our Popular products
       </div>
-      <div className="flex flex-col md:flex-row gap-5 px-10 mt-10 font-inter mb-20">
+      <div className="flex flex-col lg:w-[89%] mx-auto md:flex-row gap-5 px-10 mt-10 font-inter mb-20">
         <div>
           <Image
             src="/images/bigsofa.png"

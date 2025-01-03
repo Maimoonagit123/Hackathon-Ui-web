@@ -328,14 +328,14 @@ const Hero = () => {
       
   <div className="lg:pb-[80px] lg:w-[83%] mx-auto px-4 sm:px-6 md:px-8">
   {/* Title */}
-  <div className="text-2xl pb-[40px] mt-16 md:text-center text-left">
+  <div className="text-2xl pb-[40px] mt-24 md:text-center text-left">
     <h1 className="font-inter font-semibold text-[32px] leading-[35.2px] w-full text-[#272343]">
       Our Products
     </h1>
   </div>
 
   {/* Products Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pt-10">
     {/* Product Cards */}
     {[
       { src: "/images/whitechair.png", label: "New", price: "$20" },

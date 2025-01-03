@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import type { Metadata } from "next";
 import Link from 'next/link';
+import Subscribe from '../subscribe/page';
 
 
 export const metadata: Metadata = {
@@ -19,14 +20,14 @@ export const metadata: Metadata = {
 const product = () => {
   return (
     <div>
-      <div className=" lg:pb-[80px] lg:mx-10 mx-auto">
+      <div className=" lg:pb-[80px]  lg:w-[83%] mx-auto mt-16">
       {/* Title */}
       <div className="text-2xl pb-[40px] text-center lg:text-left">
-        <h1 className='font-inter font-semibold  text-[#272343]'>All Products</h1>
+        <h1 className='font-inter font-semibold text-[32px] text-[#272343]'>All Products</h1>
       </div>
 
       {/* Products Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8">
         {/* Product Card 1 */}
         <div className="relative w-full">
           {/* Status Badge */}
@@ -81,7 +82,7 @@ const product = () => {
               className="w-full h-auto rounded-lg"
             />
           </div>
-</Link>
+          </Link>
           {/* Product Details */}
           <div className="mt-3">
             <h3 className="text-sm font-medium text-gray-800 hover:text-[#007580]">
@@ -168,7 +169,7 @@ const product = () => {
     </div>
 
 {/* second line */}
-<div className="lg:mx-10 mx-auto lg:pb-[80px] pb-10">
+<div className=" lg:w-[83%] mx-auto lg:pb-[80px] pb-10">
       {/* Products Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {/* Product Card 1 */}
@@ -312,7 +313,7 @@ const product = () => {
     </div>
 
     {/* third line */}
-    <div className="lg:mx-10 mx-auto ">
+    <div className=" lg:w-[83%] mx-auto ">
 
       {/* Products Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -458,49 +459,7 @@ const product = () => {
       
 
     {/* subscribe portion */}
-    <div className="bg-[#f4f4f5] w-full lg:min-h-[700px] mt-24 py-16 gap-10">
-  {/* Newsletter Section */}
-  <div className="container mx-auto text-center">
-    <h2 className="w-full text-2xl sm:text-3xl lg:text-4xl font-semibold font-roboto mx-auto text-center">
-      Or Subscribe To The Newsletter
-    </h2>
-    <div className="flex flex-col sm:flex-row items-center w-full lg:w-[643px] sm:max-w-md mx-auto mt-5 gap-4">
-      <input
-        type="email"
-        placeholder="Email address..."
-        className="w-full bg-[#f4f4f5] h-10 border-b-2 border-black opacity-60 px-2 text-sm sm:text-base hover:opacity-100 transition"
-      />
-      <button className="border-b-2 border-black opacity-60 px-6 py-2 text-sm font-sans font-normal hover:opacity-100 transition">
-  SUBMIT
-</button>
-
-    </div>
-  </div>
-
-  {/* Instagram Follow Section */}
-  <div className="container mx-auto text-center mt-16">
-    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold font-roboto">
-      Follow Products And Discounts On Instagram
-    </h2>
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5 justify-center mt-10 px-4 sm:px-0">
-      {/* Individual Image Items */}
-      {["stool", "wingchair", "pinkchair", "whitechair", "orangechair", "black"].map((item, index) => (
-        <div
-          key={index}
-          className="hover:scale-110 transition-transform duration-200 ease-in-out"
-        >
-          <Image
-            src={`/images/${item}.png`}
-            alt={`${item}`}
-            height={200}
-            width={200}
-            className="rounded-md object-cover"
-          />
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
+      <Subscribe/>
 </div>
   )
 }

@@ -2,10 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+
 const chairs = () => {
   return (
     <div>
-      <div className=' flex w-[1920px] gap-20 h-[607px] ml-[100px] mt-[40px] font-inter overflow-hidden'>
+     
+      <div className=' flex  lg:w-[83%] mx-auto gap-20 h-[607px]  mt-[40px] font-inter overflow-hidden'>
         <div className='w-[675px] h-[607px]'>
         <div className=''>
         <Image 
@@ -44,12 +46,12 @@ const chairs = () => {
                   </div>
                   </div>   
           </div>
-          <div className='lg:w-[1447px] h-[409px] ml-[100px] font-inter mt-14'>
-           <div className='flex justify-between mt-14'>
+          <div className='w-full h-[409px] lg:w-[83%] mx-auto font-inter mt-10'>
+           <div className='flex justify-between mt-5'>
            <div className='w-[401px] h-[34px] font-bold text-3xl  '>FEATURED PRODUCTS</div>
-          <div className='underline'> <a href="/">View All</a></div>
+          <div className='underline'> <a href="/subscribe">View All</a></div>
            </div>
-            <div className='flex justify-between' >
+            <div className='flex gap-2  h-[409px] lg:w-[83%] ' >
             <div className='w-[270px] h-[306px] hover:scale-95 mt-14'>
             <div className='w-[270px] h-[263px] '>
             <Image
@@ -121,8 +123,7 @@ const chairs = () => {
            <div className='w-[28px] h-[17px] font-bold text-sm leading-4'>$99</div>
            </div>
             </div>
-
-            </div>
+          </div>
        </div>  
        
     </div>
