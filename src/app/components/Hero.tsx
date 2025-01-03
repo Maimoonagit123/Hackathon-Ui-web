@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link"
 const Hero = () => {
   return (
     <div>
@@ -67,12 +68,12 @@ const Hero = () => {
 
       <div className="px-4 mx-auto md:w-[85%]">
         {/* Title */}
-        <div className="text-xl font-bold pb-[40px] text-center lg:text-left">
-          <h1>Featured Products</h1>
+        <div className="text-xl font-bold pb-[40px] text-center  lg:text-left">
+          <h1 className="w-[286px] h-[35px] font-inter text-[32px] leading-[35.2px] text-[#272343]">Featured Products</h1>
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-5">
           {/* Product Card 1 */}
           <div className="relative w-full">
             {/* Status Badge */}
@@ -323,6 +324,76 @@ const Hero = () => {
           </div>
         </div>
       </div>
+                                            {/* products Section */}
+      
+  <div className="lg:pb-[80px] lg:w-[83%] mx-auto px-4 sm:px-6 md:px-8">
+  {/* Title */}
+  <div className="text-2xl pb-[40px] mt-16 md:text-center text-left">
+    <h1 className="font-inter font-semibold text-[32px] leading-[35.2px] w-full text-[#272343]">
+      Our Products
+    </h1>
+  </div>
+
+  {/* Products Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    {/* Product Cards */}
+    {[
+      { src: "/images/whitechair.png", label: "New", price: "$20" },
+      { src: "/images/pinkchair.png", label: "New", price: "$20" },
+      { src: "/images/orangechair.png", price: "$20" },
+      { src: "/images/white.png", price: "$20" },
+      { src: "/images/stool.png", label: "New", price: "$20" },
+      { src: "/images/grey.png", label: "New", price: "$20" },
+      { src: "/images/greenchair.png", price: "$20" },
+      { src: "/images/whitechair.png", price: "$20" },
+    ].map((product, index) => (
+      <div key={index} className="relative w-full">
+        {/* Status Badge */}
+        {product.label && (
+          <div className="absolute top-2 left-[132px] sm:left-[20px] md:left-8 lg:left-2 bg-[#01AD5A] text-white text-xs font-medium capitalize px-2 py-1 rounded-[4px]">
+            {product.label}
+          </div>
+          
+        )}
+
+        {/* Product Image */}
+        <div className="flex justify-center items-center">
+          <a href="/product">
+            <Image
+              src={product.src}
+              alt={`chair${index + 1}`}
+              height={312}
+              width={312}
+              className="w-full h-auto rounded-lg"
+            />
+          </a>
+          
+        </div>
+
+        {/* Product Details */}
+        <div className="mt-3 text-center lg:text-left">
+          <h3 className="text-sm font-medium text-gray-800 hover:text-[#007580]">
+            Library Stool Chair
+          </h3>
+          <p className="text-sm font-medium text-gray-800">{product.price}</p>
+        </div>
+
+        {/* Add to Cart Button */}
+        <button className="absolute bottom-2 right-32 sm:right-0 md:right-6 lg:right-[0px] bg-[#F0F2F3] hover:bg-[#007580] text-white p-2 rounded-md">
+          <a href="/product">
+            <Image
+              src="/images/cart.png"
+              alt="cart"
+              width={22}
+              height={22}
+            />
+          </a>
+        </button>
+      </div>
+    ))}
+  </div>
+</div>
+                                   
     </div>
   );
 };
