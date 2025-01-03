@@ -139,7 +139,7 @@ const Footer = () => {
           <hr className="my-6 border-gray-300" />
 
           {/* Footer Bottom Section */}
-          <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0 px-4 lg:px-12">
+          <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center space-y-4  lg:space-y-0 px-4 lg:px-12">
             <p className="text-sm text-opacity-70 font-inter">
               @ 2021 - Blogy - Designed & Developed by{" "}
               <span className="font-medium font-inter text-black">

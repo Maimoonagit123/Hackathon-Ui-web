@@ -24,7 +24,7 @@ const cart = () => {
     <div className="flex-1 h-auto lg:h-[547.89px] lg:w-3/4 w-full">
       <div className="max-w-[733px] mx-auto">
         <div className="mb-8">
-          <h2 className="font-inter text-xl sm:text-2xl font-bold">Bag</h2>
+          <h2 className="font-inter text-[32px] sm:text-2xl font-bold">Bag</h2>
         </div>
 
         {/* Item 1 */}
