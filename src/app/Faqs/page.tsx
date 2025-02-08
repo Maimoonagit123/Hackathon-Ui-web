@@ -16,31 +16,31 @@ export const metadata: Metadata = {
 const faqs = () => {
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 font-poppins mt-10">
   <div className="text-center mb-10">
-    <div className="text-[#333333] font-helvetica font-bold text-3xl sm:text-4xl lg:text-5xl">
+    <div className="text-[#333333]  font-bold text-3xl sm:text-4xl lg:text-5xl">
       Questions Look Here
     </div>
-    <div className="text-sm sm:text-base text-[#4F4F4F] mt-2">
+    <div className="text-sm sm:text-base text-[#4F4F4F] mt-2  font-poppins">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
     </div>
   </div>
 
-  <div className="flex flex-wrap justify-center gap-6 mb-10">
+  <div className="flex flex-wrap justify-center gap-6 mb-10  font-poppins">
     {[...Array(6)].map((_, index) => (
       <div
         key={index}
         className="w-full sm:w-[90%] md:w-[48%] lg:w-[47%] xl:w-[46%] 2xl:w-[45%] h-auto bg-[#F7F7F7] rounded-md p-4"
       >
         <div className="flex justify-between items-center">
-          <div className="font-inter font-bold text-lg text-[#333333]">
+          <div className=" font-bold text-lg text-[#333333]">
             What types of chairs do you offer?
           </div>
           <div className="pr-2 hover:scale-110 transition-transform ease-linear duration-100">
             <Image src="/images/add.png" height={24} width={24} alt="add" />
           </div>
         </div>
-        <div className="font-inter font-normal text-base text-gray-600 mt-2">
+        <div className=" font-normal text-base text-gray-600 mt-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis modi ullam amet debitis libero veritatis
           enim repellat optio natus eum delectus deserunt, odit expedita eos molestiae ipsa totam quidem?
         </div>
