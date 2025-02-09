@@ -13,22 +13,15 @@ import { Slider } from '@mui/material';
 
 const Feature = () => {
   const [products, setProducts] = useState<Products[]>([]);
-  const [filteredProducts, setFilteredProducts] = useState<Products[]>([]);
-  const [priceRange, setPriceRange] = useState<number>(500)
-
+ 
   useEffect(() => {
     async function fetchProducts() {
       const fetchedProducts: Products[] = await client.fetch(featuredProducts);
       setProducts(fetchedProducts);
-      setFilteredProducts(products)
     }
     fetchProducts();
-  }, []);
+  });
 
-  useEffect(()=>{
-    const filtered = products.filter(products => products.price <= priceRange);
-    setFilteredProducts(filtered)
-  },[priceRange, allProducts])
   
     const handleAddToCart = (e: React.MouseEvent, products: Products)=>{
       e.preventDefault()
@@ -42,18 +35,10 @@ const Feature = () => {
      })
       addtoCart(products)
       
-      const handlePrice = (e: React.ChangeEvent <HTMLInputElement>)=>{
-        setPriceRange(Number(e.target.value))
-      }
+     
     }
   return (
     <>
-                {/* <!-- Price Filter --> */}
-            <div className="mt-6">
-                <h2 className="text-xl font-bold">Filter by Price</h2>
-                <input type="range" min="50" max="1000" value="500" className="w-full mt-2" id="priceRange"/>
-                <p className="text-gray-500 text-sm">Price: $<span id="priceValue">500</span></p>
-            </div>
       <div className="px-4 mx-auto md:w-[85%]">
         <div className="pb-[40px] text-center  lg:text-left">
           <h1 className="w-[286px] h-[35px] font-inter font-bold text-[32px] leading-[35.2px] text-[#272343]">

@@ -40,11 +40,22 @@ async function getProduct(chairs: string): Promise<Products | null> {
 
 
 
-export default async function ProductPage({ params }: ProductPageProps) {
+import { useState, useEffect } from "react";
+
+export default function ProductPage({ params }: ProductPageProps) {
   const { chairs } = params;
-  const products = await getProduct(chairs);
+  const [products, setProducts] = useState<Products | null>(null);
+
+  useEffect(() => {
+    async function fetchProduct() {
+      const productData = await getProduct(chairs);
+      setProducts(productData);
+    }
+    fetchProduct();
+  }, [chairs]);
+
   if (!products) {
-    return <div>Product not found</div>;
+    return <div>Loading...</div>;
   }
   return (
     <div>
@@ -72,6 +83,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <button className="w-[118px] h-[44px] bg-[#029FAE] text-white rounded-full hover:bg-[#307075] transition">
               ${products.price}.00 USD
             </button>
+            <button className="text-white" onClick={(e) => handleAddToCart(e, products!)}>Add to Cart</button>
           </div>
           <hr className="mt-10" />
           <div className="w-[543px] h-[101px] mt-5">

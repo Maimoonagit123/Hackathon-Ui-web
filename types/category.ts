@@ -22,3 +22,5 @@ interface Categories{
 
 
 }
+
+export default Categories

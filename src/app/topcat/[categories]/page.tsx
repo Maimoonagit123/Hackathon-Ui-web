@@ -4,6 +4,7 @@ import { client } from "@/sanity/lib/client";
 import { allCategories, allProducts } from "@/sanity/lib/queries";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
+import Categories from "../../../../types/category";
 
 const AllCategories = () => {
   const [categories, setCategories] = useState<Categories[]>([]);
