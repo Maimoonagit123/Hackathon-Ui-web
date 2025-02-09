@@ -1,13 +1,13 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";``
 import Image from "next/image";
 import { client } from "@/sanity/lib/client";
 import { allCategories } from "@/sanity/lib/queries";
 import { urlFor } from "@/sanity/lib/image";
-import product from "../product/page";
 import Link from "next/link";
+import Categories from "../../../types/category";
 
-const topCategories = () => {
+const TopCategories = () => {
   const [categories, setCategories] = useState<Categories[]>([]);
   useEffect(() => {
     async function fetchCategory() {
@@ -61,4 +61,4 @@ const topCategories = () => {
   );
 };
 
-export default topCategories;
+export default TopCategories;
